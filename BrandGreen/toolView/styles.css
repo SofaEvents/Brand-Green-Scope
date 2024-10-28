@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+thead {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-right: 5px;
+    padding-top: 5px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.update-btn, .delete-btn {    
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.apply-btn {
+    background-color: #3d56e7;
+    color: white;
+}
+
+.apply-btn svg{    
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.find-btn {
+    background-color: #3d56e7;
+    color: white;
+}
+
+.find-btn svg{    
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.recycle-btn {
+    background-color: #3d56e7;
+    color: white;
+}
+.recycle-btn svg{    
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+}
+
+#search-input {
+    padding: 5px;
+    margin-left: 25%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.color-badge {
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    border-radius: 10px;
+    margin-right: 8px;
+    padding-top: 3%;
+    border: 1px solid #dba306;
+    background-color: #eb9007;
+    vertical-align: middle;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

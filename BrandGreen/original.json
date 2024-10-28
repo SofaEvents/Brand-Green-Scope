@@ -1,0 +1,119 @@
+[
+  {
+    "id": 0,
+    "cO2": "-0.73",
+    "colorCode": "A",
+    "ecoCost": "0.49",
+    "materialName": "Wood Plywood Knots",
+    "thickness": 18,
+    "material":""
+  },
+  {
+    "id": 1,
+    "materialName": "Black Top Old 01",
+    "thickness": 12,
+    "colorCode": "G",
+    "ecoCost": 27.78,
+    "cO2": 82.07,
+    "material":""
+  },
+  {
+    "id": 2,
+    "materialName": "Aluminum",
+    "thickness": 2,
+    "colorCode": "B",
+    "ecoCost": 0.72,
+    "cO2": 4.68,
+    "material":""
+  },
+  {
+    "id": 3,
+    "materialName": "Formica Basic",
+    "thickness": 18,
+    "colorCode": "B",
+    "ecoCost": 0.99,
+    "cO2": -0.94,
+    "material":""
+  },
+  {
+    "id": 4,
+    "materialName": "Formica Brown",
+    "thickness": 10,
+    "colorCode": "+A",
+    "ecoCost": -0.27,
+    "cO2": -3.48,
+    "material":""
+  },
+  {
+    "id": 5,
+    "materialName": "Wood OSB",
+    "thickness": 18,
+    "colorCode": "+A",
+    "ecoCost": -0.7,
+    "cO2": -6.9,
+    "material":""
+  },
+  {
+    "id": 6,
+    "materialName": "Wallpaper Thin Brown Stripes",
+    "thickness": 10,
+    "colorCode": "+A",
+    "ecoCost": 0.1,
+    "cO2": 0.23,
+    "material":""
+  },
+  {
+    "id": 7,
+    "materialName": "Carpet Barber Multi",
+    "thickness": 2.5,
+    "colorCode": "A",
+    "ecoCost": 0.39,
+    "cO2": 2.22,
+    "material":""
+  },
+  {
+    "id": 8,
+    "materialName": "Transluscent Glass Grey",
+    "thickness": 3,
+    "colorCode": "E",
+    "ecoCost": 5.98,
+    "cO2": 33.63,
+    "material":""
+  },
+  {
+    "id": 9,
+    "materialName": "Formica Beige",
+    "thickness": 3,
+    "colorCode": "A",
+    "ecoCost": 0.35,
+    "cO2": 2.29,
+    "material":""
+  },
+  {
+    "id": 10,
+    "materialName": "Formica Laminate Dark",
+    "thickness": 9,
+    "colorCode": "C",
+    "ecoCost": 1.33,
+    "cO2": 0.21,
+    "material":""
+  },
+  {
+    "id": 11,
+    "materialName": "Metal Alumnium anodized",
+    "thickness": 2,
+    "colorCode": "C",
+    "ecoCost": 45352,
+    "cO2": 3.96,
+    "material":""
+  },
+  {
+    "id": 12,
+    "materialName": "Wall paper Dog Bone",
+    "thickness": 1,
+    "colorCode": "D",
+    "ecoCost": 45537,
+    "cO2": 4.84,
+    "material":""
+  }
+]

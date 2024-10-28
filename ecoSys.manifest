@@ -1,0 +1,10 @@
+{
+  "extension_id": "ecoSys",
+  "extension": "ecoSys.rb",
+  "name": "EcoSys",
+  "version": "1.0.0",
+  "description": "This Plugin Performs calculations and reports on the environmental effect of different materials.",
+  "creator": "Informage Studios",
+  "license": "MIT",
+  "min_version": "2024"
+}

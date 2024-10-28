@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Materials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">    
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <button class="close">&times;</button>
+                <br>
+                <form style="padding-top: 20px;">
+                    <input type="hidden" name="key"  id="key">
+                    <div class="form-group">
+                        <label for="material">Material:     </label>
+                        <input type="text"  id="material" name="material" required disabled>
+                        <button type="button" class="toggle" onclick="toggleInput('material')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="material-real">Material real (Biblioteca):</label>
+                        <select id="material-real" name="material-real" required>
+                            <!-- Options serán llenados desde JavaScript -->
+                        </select>
+                        <button type="button" class="toggle" onclick="toggleInput('material-real')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="eco-cost">EcoCost (m² / m³):</label>
+                        <input type="text" id="eco-cost" name="eco-cost" required disabled>
+                        <button type="button" class="toggle" onclick="toggleInput('eco-cost')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="co2eq">CO2eq (m² / m³):</label>
+                        <input type="text" id="co2eq" name="co2eq" required disabled>
+                        <button type="button" class="toggle" onclick="toggleInput('co2eq')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="color-code">Código de color:</label>
+                        <input type="text" id="color-code" name="color-code" required disabled>
+                        <button type="button" class="toggle" onclick="toggleInput('color-code')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="thickness">Grosor (mm):</label>
+                        <input type="number" id="thickness" name="thickness" required disabled>
+                        <button type="button" class="toggle" onclick="toggleInput('thickness')">Activar</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit" onclick="updateMaterial()">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <h1>Materiales</h1>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Buscar material...">
+            <button id="add-btn">Añadir materiales</button>
+        </div>
+        <table id="materiales-table">
+            <thead>
+                <tr>
+                    <th id="material-header">Material <span id="material-sort"></span></th>
+                    <th>Material real (Biblioteca)</th>
+                    <th>EcoCost (m² / m³)</th>
+                    <th>CO2eq (m² / m³)</th>
+                    <th>Código de color</th>
+                    <th>Grosor (mm)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>              
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+    </div>    
+    <script src="../utils.js"></script>
+    <script src="script.js"></script>
+    <script src="../iconsLib.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            sketchup.pageLoaded();
+        });
+    </script>
+</body>
+</html>

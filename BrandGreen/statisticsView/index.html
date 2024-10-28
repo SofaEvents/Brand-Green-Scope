@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar Area Chart and Data Table</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chart.js"></script>.
+    <script src="jspdf.umd.min.js"></script>
+    <script src="html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="containerHead">
+            <h2 class="title">Estadísticas</h2>
+            <button class="export" id="btnExp" onclick="exportToPDF()">Exportar</button>
+        </div>
+        <hr>
+      
+        <h3 class="chart-title">Resumen</h3>
+        <div class="summary-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Total EcoCost (m³)</th>
+                        <th>Total CO2Eq (m³)</th>
+                    </tr>
+                </thead>
+                <tbody id="summaryTable">
+                    <!-- Summary data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <h3 class="chart-title">Estadísticas de Reciclado</h3>
+        <div class="summary-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Total de artículos utilizados</th>
+                        <th>Total de artículos reciclados</th>
+                        <th>Porcentaje de reciclado</th>
+                    </tr>
+                </thead>
+                <tbody id="recycledTable">
+                    <!-- Summary data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <h3 class="chart-title">Código de color</h3>
+        <div class="chart-container">
+            <canvas id="polarAreaChart"></canvas>
+        </div>
+        <h3 class="chart-title">Parámetros</h3>
+        <table id="materiales-table">
+            <thead>
+                <tr>
+                    <th>Nombre del material</th>
+                    <th>Volumen (m³)</th>
+                    <th>EcoCoste (m³)</th>
+                    <th>CO2eq (m³)</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+                <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="../utils.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

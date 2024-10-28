@@ -1,0 +1,93 @@
+
+.chart-container {
+    width: 50%;
+    padding-left: 25%;
+    text-align: center;
+}
+.title2 {
+    margin-bottom: 3px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+.title {
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.chart-title {
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+.export {
+    flex-shrink: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.containerHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+thead {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 5px;    
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-right: 5px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

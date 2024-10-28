@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para usar el Plug-In BrandGreen en SketchUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guía para usar el Plug-In BrandGreen en SketchUp</h1>
+    </header>
+    <main>
+        <section id="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#introduction">Introducción</a></li>
+                <li><a href="#installation">Instalación del Plug-In</a></li>
+                <li><a href="#usage">Cómo Usar el Plug-In</a></li>
+                <ul>
+                    <li><a href="#configuraciones">Configuraciones</a></li>
+                    <ul>
+                        <li><a href="#conf-materiales">Config. Materiales</a></li>
+                    </ul>
+                    <li><a href="#herramientas">Herramientas</a></li>
+                </ul>
+            </ul>
+        </section>
+        <section id="introduction">
+            <h2>Introducción</h2>
+            <p> Este plug-in tiene la función de anticipar el cálculo aproximado* del impacto medioambiental de los materiales utilizados en los diseños dentro del software de modelado SketchUp. 
+                <br>
+                Los cálculos de impacto medioambiental se realizan a través de las métricas de EcoCost y CO2Eq importadas de cada material, además del porcentaje de los materiales reutilizados. Estos valores se expresarán en metros cúbicos.
+            </p>
+            <strong>Los dos cálculos mencionados son:</strong>
+            <ol>
+                <li>
+                    <p>
+                        <strong>1. EcoCost:</strong> Indicador basado en el ACV que determina el valor del impacto ambiental en relación con el gasto necesario para evitar dicho impacto. 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>2. CO2Eq:</strong> Este cálculo se refiere a la medida en términos de emisiones de emisiones de dióxido de carbono (CO2). Evalúa cuánto CO2 se emite durante la construcción, uso y desmantelamiento del diseño. Huella de carbono es el nombre dado a la totalidad de la emisión de gases de efecto invernadero.
+                    </p>
+                </li>
+            </ol>        
+        </section>
+        <section id="installation">
+            <h2>Instalación del Plug-In:</h2>
+            <ol>
+                <li>Abre SketchUp y ve a Window > Administrador de Extensiones.</li>
+                <li>Haz clic en Instalar Extensión y selecciona el archivo del Plug-in (.rbz) desde tu ordenador y Abrir.</li>
+                <li>Confirma la instalación y reinicia SketchUp si es necesario.</li>
+            </ol>
+        </section>
+        <section id="usage">
+            <h2>Cómo Usar el Plug-In</h2>
+            <ol>
+                <li>Abre SketchUp y carga el modelo en el que deseas trabajar.</li>
+                <li>Ve a <strong>Plugins &gt; [Plugin BrandGreen]</strong>.</li>                
+            </ol>
+            <h3>Allí encontrarás 4 opciones:</h3>
+            <ol>
+                <li><strong>[Mostrar estadísticas]: </strong> Esta opción muestra los resultados de los cálculos realizados.</li>
+                <li><strong>[Configuraciones]: </strong> Esta opción tiene 3 sub-elementos los cuales sirven para configurar el Plug-in.</li>                
+                <ol>
+                    <li><strong>[Config. Materiales]: </strong> En esta vista podrá crear, modificar y eliminar la lista de materiales con los que se trabajarán en el proyecto.</li>
+                    <li><strong>[Export. Config]: </strong> Esta opción permite exportar las configuraciones de materiales del proyecto.</li>                
+                    <li><strong>[Import. Config]: </strong> Esta opción permite importar las configuraciones de materiales del proyecto.</li>                
+                </ol>
+                <li><strong>[Herramientas]: </strong> Esta vista te permite asignar los materiales a los Componentes o Grupos del proyecto, además de establecer los objetos reciclados.</li>                
+                <li><strong>[Ayuda]: </strong> Muestra esta ventana de ayuda.</li>                
+            </ol>
+            <h3 id="configuraciones">Configuraciones: </h3>
+            <h4 id="conf-materiales">Config. Materiales: </h4>
+            <div>
+                <img src="./assets/ConfMats.png" alt="Configuraciones de materiales"/>
+                <strong>Los datos a introducir deben estar en las siguientes unidades: </strong>
+                <ol>
+                    <li><strong>EcoCost: </strong> (m²)</li>
+                    <li><strong>CO2Eq: </strong> (m²)</li>
+                    <li><strong>Thickness: </strong> (mm)</li>
+                </ol>
+                <h2>Material Real y Material (Archivo):</h2>
+                <h3>Material Real:</h3>
+                <p>Esto hace referencia al nombre del material en la vida real como por ejemplo: "Wood Plywood Knots"</p>
+                <h3>Material (Archivo):</h3>
+                <p>Esto hace referencia al nombre del material en la sección de materiales de SketchUp como por ejemplo: "woodplywood-500x700"</p>
+                <h3>Aclaración:</h3>
+                <p>Se realiza esta diferenciación de nombre de material para poder aplicarlo al componente dentro de SketchUp, de tal forma que los nombres de materiales sean más coherentes en los reportes.</p>
+            </div>
+            <h2 id="herramientas">Herramientas:</h2>
+            <div>
+                <img src="./assets/tool.png" alt="Herramientas"/>
+                <h3>Ayuda:</h3>
+                <p>Tendrá 2 tablas la superior da la opción de marcar los componentes como reciclables y la inferior muestra la lista de materiales que se configuró para el proyecto.</p>
+                <p>Al hacer click en uno de los botones se aplicará automáticamente el material al Componente que tenga seleccionado en la escena y si hizo click en el botón de Objeto reciclado pasará a este grupo de componentes que no se toman en cuenta para realizar los cálculos.</p>
+                <h3>Importante</h3>
+                <p>Solo se aplicará el material a elementos tipo: (Componente o Grupo). Si las caras de estos elementos tienen el material puesto individualmente puede causar confusión de forma visual.</p>
+                <p>Los elementos a los que se les aplicará los materiales deben de estar correctamente diseñados, para validar esto puede revisar en el editor de SketchUp y verificar que está mostrando los metros cúbicos del elemento.</p>
+            </div>
+        </section>      
+    </main>
+    <footer>
+        <p>&copy; 2024 Guía de BrandGreen. By Informage Studios. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
